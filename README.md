@@ -25,7 +25,7 @@ To run NextJs Auth locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/OPCODE-Open-Spring-Fest/nextJs-auth
+   git clone https://github.com/OPCODE-Open-Spring-Fest/next-auth
    ```
 
 2. Navigate to the project directory:
