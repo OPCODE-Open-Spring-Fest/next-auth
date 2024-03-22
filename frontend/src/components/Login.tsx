@@ -55,10 +55,10 @@ const Login = () => {
     >
       <div className="h-screen grid place-items-center">
         <div className="text-center">
-          <h1 className="text-accent font-bold text-4xl">
+          <h1 className="text-accent font-semibold text-4xl font-serif">
             Login to Your Account
           </h1>
-          <div className="flex items-center gap-4 pt-8 w-fit mx-auto">
+          <div className="flex items-center gap-4 pt-8 w-fit mx-auto font-sans">
             <div className="icon__wrapper">
               <FaFacebookF />
             </div>
@@ -70,12 +70,12 @@ const Login = () => {
             </div>
           </div>
 
-          <p className="pt-8 text-[13px] text-gray-400">
+          <p className="pt-8 text-[13px] text-gray-400 font-sans">
             Or use your email account for registration.
           </p>
 
           <form
-            className="flex w-[300px] mx-auto flex-col pt-2 gap-2"
+            className="flex w-[300px] mx-auto flex-col pt-2 gap-2 font-sans"
             onSubmit={handleSubmit}
           >
             <input
@@ -106,13 +106,13 @@ const Login = () => {
 
       <div className="bg-accent h-screen grid place-items-center">
         <div className="text-center w-full text-white space-y-8">
-          <h2 className="font-bold text-4xl">Hello Friend!</h2>
-          <div className="text-[#eeeeee] w-fit mx-auto">
+          <h2 className="font-bold text-4xl font-serif">Hello Friend!</h2>
+          <div className="text-[#eeeeee] w-fit mx-auto font-sans">
             <p>Enter your personal details</p>
             <p>and start your journey with us</p>
 
             <Link href="/signup">
-              <button className="uppercase px-4 py-2 w-[100%] rounded-full border-2 mt-8">
+              <button className="uppercase px-4 py-2 w-[100%] rounded-full border-2 mt-8 font-sans">
                 Sign up
               </button>
             </Link>

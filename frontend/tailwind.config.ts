@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         accent: "#3aaf9f",
         accentDark: "#297c71"
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        serif: ['var(--font-spectral)'],
       }
     },
   },

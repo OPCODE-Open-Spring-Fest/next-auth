@@ -1,9 +1,21 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+import { Inter, Spectral } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const spectral = Spectral({
+  subsets: ['latin'],
+  weight: "400",
+  display: 'swap',
+  variable: '--font-spectral',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${spectral.variable}`}>
         <ToastContainer />
         {children}
       </body>
